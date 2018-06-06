@@ -1,8 +1,5 @@
 package main.taschenrechner;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Calc {
 
 	public int multiNumber(int a, int b) {
@@ -14,14 +11,10 @@ public class Calc {
 	}
 	
 	public String mod(int a, int b) {
-		List<Integer> restList = new ArrayList<Integer>();
 		int rest = a%b;
 		int voll = a/b;
-		
-		restList.add(rest);
-		restList.add(voll);
-		
-		return a+"/"+b+" = "+ rest + " Rest "+voll;
+				
+		return a+"/"+b+" = "+ voll + " Rest "+rest;
 	}
 	
 	public double divide(int a, int b) {
