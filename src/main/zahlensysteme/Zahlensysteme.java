@@ -1,6 +1,6 @@
-package main.numberTransformer;
+package main.zahlensysteme;
 
-public class NumberTransformer {
+public class Zahlensysteme {
 	
 	public void start() {
 		int myDec = 42;

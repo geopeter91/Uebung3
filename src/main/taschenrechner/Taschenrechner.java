@@ -1,24 +1,16 @@
-package main.calculator;
+package main.taschenrechner;
 
-import java.util.List;
+public class Taschenrechner {
 
-import main.calculator.calc.*;
-
-public class Calculator {
-
-	private CalcTrivial triv;
-	private CalcFaku faku;
-	private CalcFibonacci fibo;
+	private Calc triv;
 		
-	public Calculator() {
+	public Taschenrechner() {
 		System.out.println("Start Calculator");
-		triv = new CalcTrivial();
-		faku = new CalcFaku();
-		fibo = new CalcFibonacci();
+		triv = new Calc();
 	}
 
 	public void start() {
-		nextNum();
+		multiNum();
 		prevNum();
 		calcSin();
 		calcFaku();
@@ -26,7 +18,7 @@ public class Calculator {
 		calcFibonacci();
 	}
 
-	public void nextNum() {
+	public void multiNum() {
 		int a = 123;
 		int b = 5;
 		int value = triv.multiNumber(a, b);
@@ -50,30 +42,29 @@ public class Calculator {
 		int newFak=0;
 		
 		for(int i = 0;i<=6;i++) {
-			newFak = faku.calcFaku(i);
+			newFak = triv.calcFaku(i);
 			System.out.println("Falkultät von "+i+" ist "+newFak);	
 		}
 		
 		myNum = 15;
-		newFak = faku.calcFaku(myNum);
+		newFak = triv.calcFaku(myNum);
 		System.out.println("Falkultät von "+myNum+" ist "+newFak);	
 	}
 	
 	public void calcMod() {
 		int a = 4;
 		int b = 3;
-		List<Integer> modList = triv.mod(a, b);
-		System.out.println(a+"/"+b+" = "+modList.get(0) + " Rest "+modList.get(1));
+		String ergebnis = triv.mod(a, b);
 		
 		a = 20;
 		b = 6;
-		modList = triv.mod(a, b);
-		System.out.println(a+"/"+b+" = "+modList.get(0) + " Rest "+modList.get(1));	
+		ergebnis = triv.mod(a, b);
+		System.out.println(ergebnis);	
 	}
 	
 	public void calcFibonacci() {
 		int fiboLength = 10;
-		String fib = fibo.calc(fiboLength);
+		String fib = triv.calcFibonacci(fiboLength);
 		System.out.println("Die ersten "+fiboLength+" Fibonacci-Folgen lauten: \n"+fib);
 	}
 	

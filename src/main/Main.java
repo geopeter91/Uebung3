@@ -1,13 +1,13 @@
 package main;
 
-import main.calculator.Calculator;
-import main.numberTransformer.NumberTransformer;
+import main.taschenrechner.Taschenrechner;
+import main.zahlensysteme.Zahlensysteme;
 
 public class Main {
 	
 	private static Main main;
-	private Calculator calc = new Calculator();
-	private NumberTransformer transformer = new NumberTransformer();
+	private Taschenrechner calc = new Taschenrechner();
+	private Zahlensysteme transformer = new Zahlensysteme();
 		
 	public static void main(String[] args) {
 		main = new Main();
