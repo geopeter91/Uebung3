@@ -3,7 +3,8 @@ package main.schaltungen;
 public class Schaltungen {
 	
 	public void start() {
-		System.out.println("__Start Schaltungen__");
+		System.out.println("\n__Start Schaltungen__");
+		
 		Boolean val = and(true, false);
 		System.out.println("val true & false: "+val);
 	}

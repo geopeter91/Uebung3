@@ -11,10 +11,10 @@ public class Calc {
 	}
 	
 	public String mod(int a, int b) {
-		int rest = a%b;
 		int voll = a/b;
-				
-		return a+"/"+b+" = "+ voll + " Rest "+rest;
+		int rest = a%b;
+		
+		return a+" und "+b+" = "+ voll + " Rest "+rest;
 	}
 	
 	public double divide(int a, int b) {

@@ -5,7 +5,7 @@ public class Taschenrechner {
 	private Calc triv;
 		
 	public Taschenrechner() {
-		System.out.println("Start Calculator");
+		System.out.println("__START TASCHENRECHNER__");
 		triv = new Calc();
 	}
 

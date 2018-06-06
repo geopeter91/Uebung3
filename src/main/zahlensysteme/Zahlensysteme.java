@@ -3,6 +3,9 @@ package main.zahlensysteme;
 public class Zahlensysteme {
 	
 	public void start() {
+		
+		System.out.println("\n__START ZAHLENSYSTEME__");
+		
 		int myDec = 42;
 		String myBin = "101010";
 		String myHex = "2a";
